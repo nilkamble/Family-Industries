@@ -110,7 +110,7 @@ nav{
     color: #fff;
     font-size: 5vw;
 }
-@media  screen,(max-width:500px){
+@media(max-width:500px){
     nav{
         position: initial;
     }
