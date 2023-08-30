@@ -1,0 +1,150 @@
+@font-face {
+    font-family:Hanar Font ;
+    src: url(./Assets/Zuume-ExtraBold\ \(1\).ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Product Sans;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height:15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 7vw;
+}
+.left-nav a img{
+    width: 7vw;
+}
+.centre-nav{
+    display: flex;
+    gap: 2vw;
+}
+.centre-nav a{
+    color: #fff;
+    font-size: 1.2vw;
+    text-decoration: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+.centre-nav a:hover{
+    padding: .07vw 1.5vw;
+    background-color: rgb(41, 205, 41);
+    border-radius: 50px;
+    color: black;
+    cursor: pointer;
+}
+.rght-nav button{
+    padding: 1vw 2vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 1vw;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 40%;
+    height:100vh;
+    gap: 5vh;
+   padding-left: 7vw;
+}
+.left h1{
+    font-size: 10vw;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-image: url(https://media2.giphy.com/media/26FL7OPVJqJ6d3eLK/giphy.gif?cid=ecf05e47fbcwr65mqmqb68oxbbpnz425c42beyu6a1f3caxu&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    line-height: 15vh;
+    font-family: Hanar Font;
+}
+.left p{
+    color: wheat;
+    width: 28vw;
+    font-size: 1.2vw;
+}
+.right{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right video{
+    width: 90%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.btn button{
+    padding: 1.2vw 2vw;
+    border-radius: 10px;
+    border: none;
+    font-size: 1vw;
+}
+.btn button:nth-child(1){
+    background-color:greenyellow
+}
+.ri-menu-line{
+    display: none;
+    color: #fff;
+    font-size: 5vw;
+}
+@media  screen,(max-width:500px){
+    nav{
+        position: initial;
+    }
+    .ri-menu-line{
+        display: initial;
+    }
+    .centre-nav,.rght-nav{
+        display: none;
+    }
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        align-items: center;
+        width: 100%;
+        height: 56vh;
+        padding-left: 0;
+    }
+    .left h1{
+        font-size: 30vw;
+        text-align: center;
+        margin-top:15vh;
+    }
+   .left p{ width: 82vw;
+    font-size: 4.2vw;}
+    .btn button{
+        font-size: 3vw;
+        padding: 3.2vw 7vw;
+    }
+    .right {
+        width: 100%;
+    height: 70vh;
+    }
+    .right video{
+        width: 100%;
+    }
+    }
